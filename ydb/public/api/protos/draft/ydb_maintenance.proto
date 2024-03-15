@@ -43,6 +43,8 @@ message Node {
     }
     // start_time defines time when node was registered in cms.
     google.protobuf.Timestamp start_time = 8;
+    // version defines version of binary for current Node.
+    // for example, 'ydb-stable-24-1'.
     string version = 9;
 }
 
