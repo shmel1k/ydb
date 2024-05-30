@@ -17,6 +17,10 @@ Note: The working directory is ydb/tools/release_notes
 ```bash
 export GITHUB_TOKEN="<your token>"
 
+# Checkout fresh main branch
+git checkout main
+git pull origin main
+
 git fetch --tags # changelog.py depends on having the tags available, this will fetch them.
                  # If you are working from a branch in your personal fork, then you may need `git fetch --all`
 
